@@ -96,14 +96,14 @@ input[type=radio] {
   box-shadow: 0 0 8px rgb(0,0,0,.3);
 }
 .slide1 .illustration {
-  background-image: url('img/fruitsalad.png');
+  background-image: url('fruitsalad.png');
 
 }
 .slide2 .illustration {
-  background-image: url('img/freshmeat2.jpg');
+  background-image: url('freshmeat2.jpg');
 }
 .slide3 .illustration {
-  background-image: url('img/beer.png');
+  background-image: url('beer.png');
 }
 .illustration {
   height: 150px;
@@ -347,7 +347,7 @@ input[type=radio] {
   overflow: hidden;
   position: relative;
   background-image: linear-gradient(var(--azulForte),var(--vermelho));
-  background-image: url('img/24h.jpg');
+  background-image: url('24h.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -430,7 +430,7 @@ input[type=radio] {
 
 #payments div:last-child{
   height: 190px;
-  background-image: url('img/pagamento-aprox2.png');
+  background-image: url('pagamento-aprox2.png');
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -482,7 +482,7 @@ input[type=radio] {
   height: 60px;
   margin: 30px auto;
   display: flex;
-  background-image: url('img/gps.jpg');
+  background-image: url('gps.jpg');
   background-size: 100%;
   background-position: center 70%;
   filter: brightness(109%);
