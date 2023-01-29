@@ -1,0 +1,569 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chau+Philomene+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
+/* PALETA 🎨🖌️ */
+:root {
+  --vermelho: #D90416;
+  --azulForte: #272C8C;
+  --azul: #393C73;
+  --branco: #F2F2F2;
+  --preto: #0D0D0D;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+/*   ⚠️ CABEÇALHO ⚠️  */
+header {
+  width: 100%;
+  padding: 5px 0;
+  display: flex;
+  justify-content: center;
+}
+/* Logomarca */
+header img {
+  width: 90px;
+}
+/*   ⚠️ INÍCIO ⚠️  */
+#inicio {
+  display: grid;
+  align-items: center;
+}
+#inicio #slogan {
+  width: 100%;
+  animation: growUp 1s ease-out;
+  align-items: center;
+  font-family: 'nunito';
+}
+#inicio #slogan h2 {
+  padding-top: 10px;
+  padding-left: 25px;
+  color: var(--azul);
+  font-size: 30px;
+}
+#inicio #slogan h4 {
+  padding-left: 25px;
+  font-family: 'caveat';
+  color: var(--vermelho);
+  font-size: 20px;
+}
+
+/* ⚠️SLIDE ⚠️ */
+::-webkit-scrollbar {
+  width: 0;
+}
+
+input[type=radio] {
+  display: none;
+}
+#grandfather {
+  height: 280px;
+  overflow: scroll;
+  scroll-snap-type: x mandatory;
+
+}
+#father {
+  width: 300%;
+  height: 280px;
+  display: flex;
+  transition: all .6s ease;
+  justify-content: space-around;
+  align-items: center;
+}
+.children {
+  width: 33.3%;
+  height: 250px;
+  transition: all .5s ease;
+  scroll-snap-align: center;
+}
+.child {
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 8px rgb(0,0,0,.3);
+}
+.slide1 .illustration {
+  background-image: url('img/fruitsalad.png');
+
+}
+.slide2 .illustration {
+  background-image: url('img/freshmeat2.jpg');
+}
+.slide3 .illustration {
+  background-image: url('img/beer.png');
+}
+.illustration {
+  height: 150px;
+  background-size: cover;
+}
+.description {
+  height: 90px;
+}
+
+.description h2 {
+  font-family: 'comfortaa';
+  font-size: 80%;
+  color: var(--azul);
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.description h1 {
+  font-family: 'nunito';
+  font-size: 170%;
+  color: var(--azulForte);
+  padding-left: 10px;
+}
+.description p {
+  font-family: 'rubik';
+  padding-left: 10px;
+}
+.slide3 .description h1 {
+  padding-top: 10px;
+}
+#r1:checked ~ #father {
+  margin-left: 0;
+}
+#r2:checked ~ #father {
+  margin-left: -100%;
+}
+#r3:checked ~ #father {
+  margin-left: -200%;
+}
+/* ANIMATION */
+@keyframes growUp {
+  0% {
+    transform: translateX(-40%);
+    opacity: 0;
+  }
+}
+/* ⚠️ HORÁRIOS ⚠️*/
+#horario {
+  width: 90%;
+  height: 70px;
+  margin: auto;
+  align-self: start;
+  overflow: hidden;
+  box-shadow: 0 0 5px rgb(0,0,0,.3);
+  transition: all .4s ease; 
+  border-radius: 5px;
+  background: white;
+  z-index: 2;
+}
+
+#horarioFechado {
+  height: 70px;
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+#funcionamento {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+#funcionamento h3 {
+  color: var(--azul);
+  font-family: 'nunito';
+  font-size: 100%;
+  padding-left: 10px;
+  align-self: end;
+}
+#funcionamento p {
+  font-family: 'nunito';
+  align-self: start;
+  padding-left: 10px;
+}
+.fh3a {
+  font-family: 'rubik' !important;
+  font-size: 110% !important;
+}
+.fpa {
+  padding-top: 3px;
+  font-family: 'rubik' !important;
+  font-size: 110% !important;
+  font-weight: bold !important;
+}
+#botaoHorario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#botaoHorario img {
+  width: 15px;
+}
+
+#horarioComp {
+  height: 100%;
+  padding-top: 10px;
+  text-align: center;
+  font-family: 'nunito';
+}
+#horarioComp p:first-child {
+  padding: 5px;
+  font-size: 110%;
+  font-weight: bold;
+  color: var(--azul);
+}
+#horarioComp h3:first-child {
+  padding-top: 19px;
+}
+
+/* ⚠️⚠️ Encarte ⚠️⚠️ */
+#encarte {
+  padding: 50px 0 10% 0;
+  clip-path: polygon(0 0, 50% 50px, 100% 0, 100% 100%, 0 100%);
+  background: var(--azul);
+}
+#encarte div:first-child {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.mascote {
+  width: 150px;
+}
+#encarte div:first-child p {
+  width: 70%;
+  padding: 5px;
+  margin: auto;
+  color: white;
+  font-family: 'Caveat';
+  font-size: 120%;
+}
+#slider {
+  width: 100%;
+  padding-top: 50px;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+#encarte #slides {
+  display: flex;
+  justify-content: space-around;
+  width: 270%;
+}
+.slide {
+  width: 30%;
+  scroll-snap-align: start;
+  border-radius: 10px;
+  box-shadow: 0 0 5px white;
+}
+
+/* INTERFRUTAS */
+#interfrutas{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+#intercarnes{
+  padding-bottom: 50px;
+}
+#interfrutas p, #intercarnes p{
+  font-family: 'Caveat';
+  padding: 15px;
+  font-size: 130%;
+}
+.promointer img{
+  width: 100%;
+}
+
+#servicos {
+  padding-top: 20px;
+  display: grid;
+}
+#servicos section{
+  margin-bottom: 10px
+}
+.servicos {
+  width: 90%;
+  box-shadow: 0 0 5px rgb(0,0,0,.3);
+  margin: auto;
+  border-radius: 5px;
+  padding-bottom: 4px;
+}
+
+.servicos h3 {
+  padding: 10px 0 5px 15px;
+  color: var(--azul);
+  font-family: 'nunito';
+}
+.servicos div {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.servicos div p {
+  font-family: 'nunito';
+  padding: 0 0 10px 17px;
+}
+.servicos div img {
+  width: 90px;
+}
+.servicos div p a{
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px var(--azul);
+  background: var(--azul);
+  text-decoration: none;
+  color: white;
+}
+@keyframes growLeft {}
+
+#horarioPagamentos{
+  width: 70%;
+  height: 150px;
+  background: white;
+  z-index: 5;
+  margin: 10px auto 0 auto;
+ 
+}
+#horarioPagamentos h3{
+  font-family: 'nunito';
+  color: var(--azul);
+  padding: 10px 5px;
+  font-size: 90%;
+  text-align: center;
+}
+#horarioPagamentos p{
+  text-align: center;
+  font-family: 'nunito';
+  font-weight: bold;
+}
+#banco24h {
+  width: 100%;
+  margin: 0px 0 40px 0;
+  box-shadow: 0 0px 20px var(--azul);
+  font-family: 'nunito';
+  color: white;
+  overflow: hidden;
+  position: relative;
+  background-image: linear-gradient(var(--azulForte),var(--vermelho));
+  background-image: url('img/24h.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+#banco24h div {
+  padding: 20px 0;
+  display: grid;
+  grid-auto-columns: auto auto;
+  grid-template-rows: auto auto;
+  grid-template-areas: 'title title' 'esquerda direita';
+}
+#banco24h div h3 {
+  grid-area: title;
+  padding: 10px 0 5px 15px;
+  z-index: 2;
+}
+#banco24h div p {
+  grid-area: esquerda;
+  padding-left: 15px;
+  padding-bottom: 15px;
+  z-index: 2;
+}
+#banco24h div img {
+  grid-area: direita;
+  z-index: 2;
+  width: 70%;
+  justify-self: center;
+  filter: invert(100%);
+}
+
+#fundo {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: .7;
+  z-index: 1;
+  background-image: linear-gradient(var(--azulForte),var(--vermelho));
+
+}
+
+
+#payments h1{
+  padding: 20px 0 10px 20px;
+  font-family: 'nunito';
+  color: var(--azul);
+}
+
+#payments #ways {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+#payments #ways ul {
+  height: 200px;
+  padding-bottom: 30px;
+  display: grid;
+  grid-template-rows: auto;
+  align-items: center;
+}
+
+#payments #ways ul li {
+  list-style: none;
+  padding-left: 20px;
+  display: flex;
+  z-index: 10;
+  align-items: center;
+  font-family: 'nunito';
+}
+
+#payments #ways ul li img {
+  width: 40px;
+  padding-right: 5px;
+}
+
+#payments #ways img {
+  width: 100px;
+  justify-self: end;
+}
+
+#payments div:last-child{
+  height: 190px;
+  background-image: url('img/pagamento-aprox2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  display: flex;
+  box-shadow: 0 0 15px lightgray;
+  }
+  
+#payments div:last-child h4{
+  padding: 20px;
+  width: 60%;
+  font-family: 'nunito';
+  font-size: 130%;
+  color: white;
+  text-align: left;
+  position: absolute;
+  z-index: 3;
+  align-self: center;
+  justify-self: end;
+}
+#payments div:last-child div{
+    background-image: linear-gradient(to right,var(--azul), transparent);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  
+#comoChegar{
+  padding: 50px 0;
+}
+
+#tituloMapa{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#tituloMapa img{
+  width: 75px;
+  padding: 5px;
+  box-shadow: 0 0 5px lightgray;
+}
+#tituloMapa  h1{
+  font-family: "nunito";
+  color: var(--azul);
+}
+#endereco{
+  width: 90%;
+  height: 60px;
+  margin: 30px auto;
+  display: flex;
+  background-image: url('img/gps.jpg');
+  background-size: 100%;
+  background-position: center 70%;
+  filter: brightness(109%);
+  box-shadow: 0 0 0px lightgray;
+  border-radius: 10px;
+}
+#endereco img{
+  width: 25px;
+  padding-left: 20px;
+  align-self: center;
+  justify-self: center;
+}
+#endereco div{
+  display: grid;
+  font-family: 'nunito';
+}
+#endereco div p:first-child{
+  color: gray;
+  align-self: end;
+  padding-left: 15px;
+}
+#endereco p:last-child{
+  padding-left: 15px;
+  font-weight: bold;
+}
+#mapa{
+  width: 90%;
+  margin: auto;
+}
+iframe{
+  width: 100%;
+  height: 300px;
+  margin: auto;
+  border-radius: 5px;
+}
+footer {
+  width: 100%;
+  padding: 0px 0 ;
+  background: var(--azul);
+}
+#redes{
+  display: flex;
+  height: 100px; 
+  width: 50%;
+  margin: auto;
+  align-items: center;
+  justify-content: space-around;
+}
+#redes a img{
+  width: 30px;
+  filter: invert(100%);
+}
+footer p{
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  font-family: 'nunito';
+}
+#footerlogo{
+  width: 100%;
+  background: rgb(255,255,255,.9);
+  display: flex;
+  justify-content: center;
+}
+
+footer p:last-child{
+  padding: 10px 30px;
+  font-family: 'rubik';
+  font-size: 80%;
+  display: flex;
+}
+#telefone{
+  width: 100%;
+  width: 100%;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+#telefone p{
+  color: white;
+  text-align: center;
+  font-family: 'rubik';
+  font-size: 100%;
+}
