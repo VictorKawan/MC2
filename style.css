@@ -567,3 +567,13 @@ footer p:last-child{
   font-family: 'rubik';
   font-size: 100%;
 }
+
+#whatsappFixed{
+  width: 60px;
+  position: fixed;
+  bottom: 100px;
+  z-index: 10;
+  border-radius: 50%;
+  box-shadow: 0 0 5px green;
+  right: 10px;
+}
