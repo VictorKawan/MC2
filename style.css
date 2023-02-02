@@ -282,7 +282,7 @@ input[type=radio] {
   display: grid;
 }
 #servicos section{
-  margin-bottom: 10px
+  margin-bottom: 13px;
 }
 .servicos {
   width: 90%;
@@ -378,7 +378,7 @@ input[type=radio] {
 }
 #banco24h {
   width: 100%;
-  margin: 0px 0 40px 0;
+  margin: 30px 0 40px 0;
   box-shadow: 0 0px 20px var(--azul);
   font-family: 'nunito';
   color: white;
