@@ -330,6 +330,8 @@ input[type=radio] {
 #fatura .servicos div p:last-child:active{
   box-shadow: 0 0 10px var(--azul);
 }
+@keyframes growLeft {}
+
 #horarioPagamentos{
   width: 90%;
   height: 0px;
