@@ -94,7 +94,7 @@ var verHorarios = document.getElementById('horarioPagamentos');
 function avisos() {
   if(verHorarios.style.height < '100px'){
     ativarAvisos.innerHTML = 'Fechar'
-    verHorarios.style.height = '200px'
+    verHorarios.style.height = '300px'
   } else{
     ativarAvisos.innerHTML = 'Ver horários'
     verHorarios.style.height = '0px'
