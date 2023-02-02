@@ -89,4 +89,14 @@ horarioF.innerHTML = horasF
       document.getElementById('r'+count).checked = true;
     }
     
-/* MAPA */
+var ativarAvisos = document.querySelector('#fatura .servicos div p:last-child');
+var verHorarios = document.getElementById('horarioPagamentos');
+function avisos() {
+  if(verHorarios.style.height < '100px'){
+    ativarAvisos.innerHTML = 'Fechar'
+    verHorarios.style.height = '200px'
+  } else{
+    ativarAvisos.innerHTML = 'Ver horários'
+    verHorarios.style.height = '0px'
+}
+}
