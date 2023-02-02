@@ -316,27 +316,57 @@ input[type=radio] {
   text-decoration: none;
   color: white;
 }
+#fatura .servicos div p:last-child{
+  padding: 5px;
+  width: 90px;
+  text-align: center;
+  margin: auto auto auto 17px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px var(--azul);
+  background: var(--azul);
+  color: white;
+  transition: all .3s ease;
+}
+#fatura .servicos div p:last-child:active{
+  box-shadow: 0 0 10px var(--azul);
+}
 @keyframes growLeft {}
 
 #horarioPagamentos{
-  width: 70%;
-  height: 150px;
+  width: 90%;
+  height: 0px;
   background: white;
   z-index: 5;
   margin: 10px auto 0 auto;
- 
+ box-shadow: 0 0 5px lightgray;
+ transition: all .3s ease;
 }
-#horarioPagamentos h3{
+#horarioPagamentos h3:first-child{
   font-family: 'nunito';
   color: var(--azul);
   padding: 10px 5px;
   font-size: 90%;
   text-align: center;
 }
+#horarioPagamentos h3{
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 5px;
+  font-size: 90%;
+  color: var(--azul);
+  font-family: 'nunito';
+}
 #horarioPagamentos p{
   text-align: center;
-  font-family: 'nunito';
+  font-family: 'rubik';
   font-weight: bold;
+}
+#horarioPagamentos ul{
+  padding-left: 30px;
+  font-family: 'rubik';
+}
+#horarioPagamentos ul li{
+  padding: 1.5px;
 }
 #banco24h {
   width: 100%;
