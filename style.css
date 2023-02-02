@@ -333,22 +333,25 @@ input[type=radio] {
 @keyframes growLeft {}
 
 #horarioPagamentos{
+  wid
+#horarioPagamentos{
   width: 90%;
   height: 0px;
   background: white;
   z-index: 5;
   margin: 10px auto 0 auto;
  box-shadow: 0 0 5px lightgray;
- transition: all .3s ease;
+ transition: all .6s ease;
+ overflow-y: hidden;
 }
-#horarioPagamentos h3:first-child{
+#horarioPagamentos .h3{
   font-family: 'nunito';
   color: var(--azul);
-  padding: 10px 5px;
+  padding: 10px 5px 5px 5px;
   font-size: 90%;
   text-align: center;
 }
-#horarioPagamentos h3{
+#horarioPagamentos #avisos{
   margin-top: 20px;
   padding-left: 20px;
   padding-bottom: 5px;
@@ -360,6 +363,13 @@ input[type=radio] {
   text-align: center;
   font-family: 'rubik';
   font-weight: bold;
+}
+#divisor{
+  width: 50%;
+  height: 1px;
+  background: lightgray;
+  border-radius: 1px;
+  margin: 8px auto 0 auto;
 }
 #horarioPagamentos ul{
   padding-left: 30px;
