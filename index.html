@@ -2,8 +2,9 @@
 <html lang="pt-BR">
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <link rel="icon" type="image/png" href="logo.png"/>
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="logo.png"/>
   <title>Mercadinho Cidade</title>
   <meta name="keywords" content="mercado, compras,mercadinho cidade,loja,mercadinho" />
   <meta name="author" content="Victor Kawan">
@@ -113,7 +114,7 @@
     </div>
   </section>
   <!-- INTERFRUTAS -->
-  <section id="interfrutas">
+  <section id="interfrutas" data-show="grow">
     <div class="promointer">
       <img src="2.png" alt="">
     </div>
@@ -122,9 +123,9 @@
     </p>
   </section>
   <!-- INTERCARNES -->
-  <section id="intercarnes">
+  <section id="intercarnes" data-show="grow">
     <div class="promointer">
-      <img src="bannerC.png" alt="">
+      <img src="BannerC.png" alt="">
     </div>
     <p>
       Se vai planejar aquele churrasco pro final de semana já sabe né, referência de carne de qualidade é Cidade! Então aproveita que Quarta e Quinta temos promoções, não fique de fora e aproveite!
@@ -132,7 +133,7 @@
   </section>
   <div id="servicos">
     <!-- FRETE -->
-    <section id="frete">
+    <section id="frete" data-show="left">
       <div class="servicos">
         <h3>Nós levamos até você</h3>
         <div>
@@ -144,7 +145,7 @@
       </div>
     </section>
     <!-- WHATSAPP -->
-    <section id="whatsapp">
+    <section id="whatsapp" data-show="right">
       <div class="servicos">
         <h3>Peça pelo whatsapp</h3>
         <div>
@@ -159,7 +160,7 @@
       </div>
     </section>
     <!-- FATURA -->
-    <section id="fatura">
+    <section id="fatura" data-show="left">
       <div class="servicos">
         <h3>Pague seus boletos aqui</h3>
         <div>
@@ -167,11 +168,11 @@
             Evite filas em lotéricas. No cidade você pode fazer o pagamento das suas contas e não cobramos tarifa 😉
           </p>
           <img src="conta.png" alt="">
- <p onclick="avisos()">Ver horários</p>
+          <p onclick="avisos()">Ver horários</p>
         </div>
       </div>
-       <div id="horarioPagamentos">
-          <h3 class="h3">HORÁRIO DE PAGAMENTO DE CONTAS</h3>
+      <div id="horarioPagamentos">
+        <h3 class="h3">HORÁRIO DE PAGAMENTO DE CONTAS</h3>
         <p>SEGUNDA À QUINTA</p>
         <p>DAS 07H ÀS 17H</p>
         <div id="divisor"></div>
@@ -188,7 +189,7 @@
     </section>
   </div>
   <!-- BANCO 24H -->
-  <section id="banco24h">
+  <section id="banco24h" data-show="grow">
     <div id="fundo"></div>
     <div>
       <h3>Aqui tem banco24h</h3>
@@ -200,15 +201,15 @@
   </section>
   <!-- PAGAMENTOS -->
   <section id="payments">
-    <h1>Aceitamos</h1>
+    <h1 data-show="grow">Aceitamos</h1>
     <div id="ways">
       <ul>
-        <li><img src="iconedinheiro.png" alt="">Dinheiro</li>
-        <li><img src="iconecartao.png" alt="">Débito/Crédito</li>
-        <li><img src="iconeVL.png" alt="">Vale Alimentação</li>
-        <li><img src="iconeQR.png" alt="">Pix (QRCode)</li>
+        <li data-show="left"><img src="iconedinheiro.png" alt="">Dinheiro</li>
+        <li data-show="left"><img src="iconecartao.png" alt="">Débito/Crédito</li>
+        <li data-show="left"><img src="iconeVL.png" alt="">Vale Alimentação</li>
+        <li data-show="left"><img src="iconeqr.png" alt="">Pix (QRCode)</li>
       </ul>
-      <img src="pay.png" alt="">
+      <img data-show="grow" src="pay.png" alt="">
     </div>
     <div>
       <h4>mas no momento não aceitamos pagamentos por aproximação</h4>
@@ -234,7 +235,7 @@
 "></iframe>
 </div>
   </section>
-  <a href="https://wa.me/558585383529"><img id="whatsappFixed" src="whatsappFixed.png" alt="" /></a>
+  <a href="https://wa.me/558585383529"><img id="whatsappFixed" src="whatsappFixed.png" alt=""></a>
   <footer>
     <div id="redes">
       <a href="https://m.facebook.com/100057364244605/about/"><img src="facebook.png" alt=""></a>
@@ -242,7 +243,7 @@
       <a href="https://wa.me/558585383529"><img src="whatsapp.png" alt="" /></a>
     </div>
     <div id="telefone">
-      <p>(85) 32743283</p>
+      <p>(85) 932743283</p>
     </div>
     <p>Rua Simão Santos, 315 - Paupina, Fortaleza - CE 60875-020</p>
   </footer>
