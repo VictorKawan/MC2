@@ -100,3 +100,16 @@ function avisos() {
     verHorarios.style.height = '0px'
 }
 }
+
+/* Animação scroll */
+const target = document.querySelectorAll('[data-show]');
+function apresentar() {
+  const janelaTop = window.pageYOffset + ((window.innerHeight * 3) / 4) 
+  target.forEach((element) => {
+    if((janelaTop) > element.offsetTop){
+      element.classList.add('apresentar')
+    }})
+}
+window.addEventListener("scroll", () =>{
+  apresentar();
+} )
