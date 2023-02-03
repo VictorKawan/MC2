@@ -43,21 +43,30 @@ header img {
 }
 #inicio #slogan {
   width: 100%;
-  animation: growUp 1s ease-out;
   align-items: center;
   font-family: 'nunito';
+    transition: .3s;
+  
 }
 #inicio #slogan h2 {
   padding-top: 10px;
   padding-left: 25px;
   color: var(--azul);
   font-size: 30px;
+  opacity: 0;
+  transform: translate3d(-50px,0,0);
+  animation: growUp .8s forwards;
+  animation-delay: .2s;
 }
 #inicio #slogan h4 {
   padding-left: 25px;
   font-family: 'caveat';
   color: var(--vermelho);
   font-size: 20px;
+  opacity: 0;
+  transform: translate3d(-50px,0,0);
+ animation: growUp .8s forwards;
+  animation-delay: .5s;
 }
 
 /* ⚠️SLIDE ⚠️ */
@@ -144,9 +153,9 @@ input[type=radio] {
 }
 /* ANIMATION */
 @keyframes growUp {
-  0% {
-    transform: translateX(-40%);
-    opacity: 0;
+  100% {
+    transform: translate3d(0px,0,0);
+    opacity: 1;
   }
 }
 /* ⚠️ HORÁRIOS ⚠️*/
@@ -278,7 +287,9 @@ input[type=radio] {
 }
 
 #servicos {
+  width: 100%;
   padding-top: 20px;
+  overflow-x: hidden;
   display: grid;
 }
 #servicos section{
@@ -476,7 +487,9 @@ input[type=radio] {
   display: flex;
   box-shadow: 0 0 15px lightgray;
   }
-  
+  #intercarnes, #interfrutas{
+    overflow-x: hidden;
+  }
 #payments div:last-child h4{
   padding: 20px;
   width: 60%;
@@ -614,4 +627,23 @@ footer p:last-child{
   border-radius: 50%;
   box-shadow: 0 0 5px green;
   right: 10px;
+}
+
+[data-show]{
+  opacity: 0;
+  transition: all .6s;
+}
+
+[data-show="left"]{
+  transform: translate3d(-50px, 0, 0);
+}
+[data-show="right"]{
+  transform: translate3d(50px, 0, 0);
+}
+[data-show="growUp"]{
+  transform: translate3d(0,0,50px);
+}
+[data-show].apresentar {
+  opacity: 1;
+  transform: translate3d(0,0,0);
 }
