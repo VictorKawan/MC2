@@ -78,7 +78,6 @@ input[type=radio] {
   display: none;
 }
 #grandfather {
-  height: 280px;
   overflow: scroll;
   scroll-snap-type: x mandatory;
 
@@ -93,12 +92,15 @@ input[type=radio] {
 }
 .children {
   width: 33.3%;
-  height: 90%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transition: all .5s ease;
   scroll-snap-align: center;
 }
 .child {
-  width: 90%;
+  width: 95%;
   margin: 0 auto;
   border-radius: 5px;
   overflow: hidden;
@@ -115,11 +117,11 @@ input[type=radio] {
   background-image: url('beer.png');
 }
 .illustration {
-  height: 150px;
+  height: 65%;
   background-size: cover;
 }
 .description {
-  height: 90px;
+  height: 35%;
 }
 
 .description h2 {
