@@ -2,7 +2,7 @@ var alturaAba = window.innerHeight;
 var alturaHeader = document.querySelector('header').clientHeight;
 document.querySelector('#inicio').style.height = (alturaAba-alturaHeader)+'px'
 var slide = document.querySelector('#grandfather');
-slide.style.height = (alturaAba*.45)+'px'
+slide.style.height = (alturaAba*.50)+'px'
 var horario = document.querySelector('#horario');
 var estamosAbertos = document.querySelector('#funcionamento h3');
 
