@@ -100,7 +100,8 @@ input[type=radio] {
   scroll-snap-align: center;
 }
 .child {
-  width: 95%;
+  width: 90%;
+  height: 95%;
   margin: 0 auto;
   border-radius: 5px;
   overflow: hidden;
