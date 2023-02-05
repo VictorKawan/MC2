@@ -85,7 +85,7 @@ input[type=radio] {
 }
 #father {
   width: 300%;
-  height: 280px;
+  height: 100%;
   display: flex;
   transition: all .6s ease;
   justify-content: space-around;
@@ -93,7 +93,7 @@ input[type=radio] {
 }
 .children {
   width: 33.3%;
-  height: 250px;
+  height: 90%;
   transition: all .5s ease;
   scroll-snap-align: center;
 }
